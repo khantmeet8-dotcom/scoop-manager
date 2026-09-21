@@ -1,7 +1,7 @@
 const CACHE = "scoop-manager-v1";
 const ASSETS = [
   "./",
-  "./SCOOP_MANAGER_PWA.html",
+  "./index.html",
   "./manifest.json"
 ];
 
