@@ -2,7 +2,7 @@
   "name": "Scoop Manager",
   "short_name": "Scoop Manager",
   "description": "Homemade Harmony business management app",
-  "start_url": "./SCOOP_MANAGER_PWA.html",
+  "index.html": "./SCOOP_MANAGER_PWA.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f7fb",
