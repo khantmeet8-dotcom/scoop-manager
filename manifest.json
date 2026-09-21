@@ -1,0 +1,25 @@
+{
+  "name": "Scoop Manager",
+  "short_name": "Scoop Manager",
+  "description": "Homemade Harmony business management app",
+  "start_url": "./SCOOP_MANAGER_PWA.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#6c5ce7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
