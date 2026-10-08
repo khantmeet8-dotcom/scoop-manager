@@ -9,7 +9,6 @@ const ASSETS_TO_CACHE = [
   './apple-touch-icon.png'
 ];
 
-// Install event: Caches critical files
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -18,7 +17,6 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Activate event: Cleans up old caches
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -33,7 +31,6 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch event: Serves files from cache when offline
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
