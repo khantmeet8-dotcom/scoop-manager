@@ -16,11 +16,11 @@
 </head>
 <body>
 
-  <!-- Install App Button (Hidden by default to prevent flickering) -->
+  <!-- Install App Button (Hidden by default) -->
   <button id="install-btn">Install App</button>
 
   <script>
-    // --- Service Worker Registration ---
+    // Service Worker Registration
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./service-worker.js')
@@ -29,7 +29,7 @@
       });
     }
 
-    // --- Install Button Logic (Prevents Flickering) ---
+    // Install Button Logic (Prevents Flickering)
     let deferredPrompt;
     const installBtn = document.getElementById('install-btn');
 
@@ -59,7 +59,7 @@
       }
     });
 
-    // --- Keyboard Shortcut: Press Control Key Alone to Trigger + New Order ---
+    // Keyboard Shortcut: Press Control Key Alone to Open New Order
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Control') {
         e.preventDefault();
